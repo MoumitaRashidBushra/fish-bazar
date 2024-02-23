@@ -1,0 +1,59 @@
+.hover\:marker {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    transition: transform 0.3s;
+    /* Add a smooth transition */
+}
+
+.hover\:marker::before {
+    content: "";
+    position: absolute;
+    width: 0.5rem;
+    /* Adjust the size as needed */
+    height: 0.5rem;
+    /* Adjust the size as needed */
+    background-color: #ed8311;
+    /* Color of the marker point */
+    top: 50%;
+    left: -0.5rem;
+    /* Adjust the initial position to the left */
+    transform: translate(-50%, -50%);
+    border-radius: 0;
+    /* Remove border-radius to make it square */
+    display: none;
+}
+
+.hover\:marker:hover {
+    transform: translateX(1rem);
+    /* Move the text to the right */
+}
+
+.hover\:marker:hover::before {
+    display: block;
+}
+
+/* Add space between marker point and text */
+.hover\:marker a {
+    margin-left: 0.5rem;
+    /* Adjust the margin to control the spacing */
+}
+
+/* Responsive Styles for Mobile Devices */
+@media (max-width: 640px) {
+    .hover\:marker::before {
+        left: 0.25rem;
+        /* Adjust the initial position for mobile devices to the left */
+    }
+
+    .hover\:marker:hover {
+        transform: translateX(0.5rem);
+        /* Move the text to the right on mobile devices */
+    }
+
+    /* Adjust the spacing for mobile devices */
+    .hover\:marker a {
+        margin-left: 0.25rem;
+        /* Adjust the margin to control the spacing on mobile devices */
+    }
+}

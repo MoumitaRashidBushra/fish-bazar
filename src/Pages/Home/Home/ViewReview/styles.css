@@ -1,0 +1,48 @@
+/* styles.css */
+.ReadReview {
+    height: 50vh;
+    width: 170vh;
+}
+
+/* Adjust the container height and width for mobile devices */
+@media (max-width: 768px) {
+    .ReadReview {
+        height: 50vh;
+        /* Set to full viewport height for mobile */
+        width: 90vw;
+        /* Set to full viewport width for mobile */
+    }
+}
+
+html,
+body {
+    position: relative;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+}
+
+.mySwiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

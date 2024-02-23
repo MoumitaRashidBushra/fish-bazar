@@ -1,0 +1,13 @@
+.avatar:hover>.px-6 {
+    visibility: visible;
+    opacity: 1;
+}
+
+.relative:hover .absolute {
+    display: block;
+}
+
+/* .overlay:hover {
+    background: rgba(0, 0, 0, 0.5);
+   
+} */
